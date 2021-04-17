@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210417 13:13:05.896" rpa="false">
+<suite id="s1" name="Rb Tags Tests" source="D:\B-Mine\Company\Company\NCS\robot_workspace\RobotSeleniumConcept\robot_suite\rb_tags_tests.robot">
+<test id="s1-t1" name="TC1">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc1</arg>
+</arguments>
+<status status="PASS" starttime="20210417 13:13:05.945" endtime="20210417 13:13:05.948"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${TEST_TAGS}</arg>
+</arguments>
+<status status="PASS" starttime="20210417 13:13:05.951" endtime="20210417 13:13:05.954"></status>
+</kw>
+<kw name="${tag} IN [ @{TEST_TAGS} ]" type="for">
+<kw name="${tag} = bala" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${tag}</arg>
+</arguments>
+<status status="PASS" starttime="20210417 13:13:05.956" endtime="20210417 13:13:05.957"></status>
+</kw>
+<status status="PASS" starttime="20210417 13:13:05.956" endtime="20210417 13:13:05.957"></status>
+</kw>
+<kw name="${tag} = ftag" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${tag}</arg>
+</arguments>
+<status status="PASS" starttime="20210417 13:13:05.958" endtime="20210417 13:13:05.959"></status>
+</kw>
+<status status="PASS" starttime="20210417 13:13:05.958" endtime="20210417 13:13:05.959"></status>
+</kw>
+<kw name="${tag} = OP-101" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${tag}</arg>
+</arguments>
+<status status="PASS" starttime="20210417 13:13:05.959" endtime="20210417 13:13:05.960"></status>
+</kw>
+<status status="PASS" starttime="20210417 13:13:05.959" endtime="20210417 13:13:05.960"></status>
+</kw>
+<status status="PASS" starttime="20210417 13:13:05.955" endtime="20210417 13:13:05.960"></status>
+</kw>
+<tags>
+<tag>bala</tag>
+<tag>ftag</tag>
+<tag>OP-101</tag>
+</tags>
+<status status="PASS" starttime="20210417 13:13:05.943" endtime="20210417 13:13:05.962" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC2">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc2</arg>
+</arguments>
+<status status="PASS" starttime="20210417 13:13:05.965" endtime="20210417 13:13:05.965"></status>
+</kw>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>TC2</arg>
+<arg>invalid</arg>
+<arg>fff</arg>
+</arguments>
+<msg timestamp="20210417 13:13:05.968" level="INFO">Set tags 'TC2', 'invalid' and 'fff'.</msg>
+<status status="PASS" starttime="20210417 13:13:05.967" endtime="20210417 13:13:05.968"></status>
+</kw>
+<kw name="Remove Tags" library="BuiltIn">
+<doc>Removes given ``tags`` from the current test or all tests in a suite.</doc>
+<arguments>
+<arg>ftag</arg>
+<arg>dtag</arg>
+</arguments>
+<msg timestamp="20210417 13:13:05.972" level="INFO">Removed tags 'ftag' and 'dtag'.</msg>
+<status status="PASS" starttime="20210417 13:13:05.969" endtime="20210417 13:13:05.972"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${TEST_TAGS}</arg>
+</arguments>
+<status status="PASS" starttime="20210417 13:13:05.973" endtime="20210417 13:13:05.974"></status>
+</kw>
+<tags>
+<tag>bala</tag>
+<tag>fff</tag>
+<tag>invalid</tag>
+<tag>TC2</tag>
+</tags>
+<status status="PASS" starttime="20210417 13:13:05.964" endtime="20210417 13:13:05.975" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC3">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc3</arg>
+</arguments>
+<status status="PASS" starttime="20210417 13:13:05.980" endtime="20210417 13:13:05.980"></status>
+</kw>
+<kw name="Remove Tags" library="BuiltIn">
+<doc>Removes given ``tags`` from the current test or all tests in a suite.</doc>
+<arguments>
+<arg>ftag</arg>
+</arguments>
+<msg timestamp="20210417 13:13:05.983" level="INFO">Removed tag 'ftag'.</msg>
+<status status="PASS" starttime="20210417 13:13:05.982" endtime="20210417 13:13:05.983"></status>
+</kw>
+<tags>
+<tag>bala</tag>
+<tag>dtag</tag>
+</tags>
+<status status="PASS" starttime="20210417 13:13:05.978" endtime="20210417 13:13:05.983" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210417 13:13:05.898" endtime="20210417 13:13:05.985"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0">bala</stat>
+<stat pass="1" fail="0">dtag</stat>
+<stat pass="1" fail="0">fff</stat>
+<stat pass="1" fail="0">ftag</stat>
+<stat pass="1" fail="0">invalid</stat>
+<stat pass="1" fail="0">OP-101</stat>
+<stat pass="1" fail="0">TC2</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Rb Tags Tests">Rb Tags Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
