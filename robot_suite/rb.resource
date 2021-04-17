@@ -1,4 +1,4 @@
 *** Settings ***
 
 *** Variables ***
-${BROWSER}    ff
+${BROWSER}    ch
